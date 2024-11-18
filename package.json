@@ -1,5 +1,5 @@
 {
-  "name": "TStype",
+  "name": "ts-type-file",
   "version": "1.0.0",
   "description": "将java 的类型文件转成TS 的类型文件",
   "type": "commonjs",

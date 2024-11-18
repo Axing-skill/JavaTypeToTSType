@@ -1,0 +1,10 @@
+types/
+back_type_file/
+node_modules/
+.vscode/
+test/
+utils/
+
+rollup.config.js
+TStype.js
+.babelrc
