@@ -1,5 +1,5 @@
-const WriteFile = require("./WriteFile");
-const ReadFile = require("./ReadFile");
+const WriteFile = require("./utils/WriteFile");
+const ReadFile = require("./utils/ReadFile");
 
 /**
  * @class ClassFileConversion 类型转换
@@ -38,3 +38,5 @@ class ClassFileConversion {
     wF.outFile(class_name, import_str + template);
   }
 }
+
+module.exports = ClassFileConversion;

@@ -1,0 +1,23 @@
+{
+  "name": "TStype",
+  "version": "1.0.0",
+  "description": "将java 的类型文件转成TS 的类型文件",
+  "type": "commonjs",
+  "main": "dist/TStype.js",
+  "author": "Eisen <1612077155@qq.com>",
+  "exports": {
+    "require": "./dist/TStype.js"
+  },
+  "scripts": {
+    "rollup": "rollup -c",
+    "build": "npm run rollup"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup": "^4.27.2"
+  }
+}

@@ -1,9 +1,10 @@
+const ClassFileConversion = require("../dist/Core");
 new ClassFileConversion(
   "catalogue",
   // "file",
-  "./back_type_file",
+  "../back_type_file",
   // "./back_type_file/LogisticsMiningResultVO.java",
-  "/types",
+  "../types",
   [
     {
       name: "class_expression",
@@ -42,5 +43,5 @@ new ClassFileConversion(
       ]
     }
   ],
-  "./types/"
+  "../types/"
 );
