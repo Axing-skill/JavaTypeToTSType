@@ -1,10 +1,15 @@
-types/
+.vscode/
 back_type_file/
 node_modules/
-.vscode/
+src/
 test/
+types/
+ts_type_file/
+types/
 utils/
 
+.gitignore
+.npmignore
+pnpm-lock.yaml
 rollup.config.js
 TStype.js
-.babelrc

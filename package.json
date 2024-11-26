@@ -11,7 +11,7 @@
   "scripts": {
     "test": "jest",
     "rollup": "rollup -c",
-    "build": "npm run rollup"
+    "build": "npm run rollup && npm version patch && npm publish"
   },
   "dependencies": {
     "@babel/core": "^7.26.0",
