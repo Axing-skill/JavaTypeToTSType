@@ -6,7 +6,6 @@ const ClassFileConversion = require("../TStype.js");
 // describe("测试类型转换类 ClassFileConversion", () => {
 //   test("ClassFileConversion 构造函数，传参不全", () => {
 //     new ClassFileConversion(
-//       "folder",
 //       "./back_type_file",
 //       "./ts_type_file",
 //       "./types",

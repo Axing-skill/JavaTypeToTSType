@@ -14,7 +14,8 @@ const ePath = require("../utils/e-path");
  */
 class ReadFile {
   content;
-  constructor(type, str) {
+  constructor(str) {
+    let type = /\.(\w+)$/.test(str) ? "file" : "folder"; // 判断类型，是否以.xxx结尾
     this.handleInput(type, str);
   }
   /**

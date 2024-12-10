@@ -5,14 +5,13 @@ const JudgeVariableRegex = require("./utils/JudgeVariableRegex.js");
 
 /**
  * @class ClassFileConversion 类型转换
- * @param {string} type 读入文件类型
  * @param {string} input 读入文件路径
  * @param {string} output 输出文件路径
  * @param {string} typePath 引入类型文件的前缀
  * @param { { [name: string]: Array<{ regex: string, mode: string } } } variable_regex 获取变量的正则表达式
  */
 class ClassFileConversion {
-  constructor(type, input, output, typePath, variable_regex) {
+  constructor(input, output, typePath, variable_regex) {
     judgeParams(); // 判断参数是否正确
     getContent.call(this); // 获取文件内容
 
@@ -21,7 +20,6 @@ class ClassFileConversion {
      */
     function judgeParams() {
       if (
-        !JudgeType(type, "string") ||
         !JudgeType(input, "string") ||
         !JudgeType(output, "string") ||
         !JudgeType(typePath, "string")
@@ -35,7 +33,7 @@ class ClassFileConversion {
      * @function 获取文件内容
      */
     function getContent() {
-      const rF = new ReadFile(type, input); // 获取文件内容
+      const rF = new ReadFile(input); // 获取文件内容
       rF.content.forEach((file_content) => {
         this.getVariableString(
           new WriteFile(file_content, output),
